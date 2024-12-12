@@ -1,5 +1,6 @@
 package com.slezkipotekli.cms.config;
 
+import com.slezkipotekli.cms.service.JWTService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

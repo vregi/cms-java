@@ -1,4 +1,4 @@
-package com.slezkipotekli.cms.auth;
+package com.slezkipotekli.cms.dto.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

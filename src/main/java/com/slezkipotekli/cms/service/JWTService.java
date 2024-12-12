@@ -1,4 +1,4 @@
-package com.slezkipotekli.cms.config;
+package com.slezkipotekli.cms.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -41,9 +41,9 @@ public class JWTService {
         return Jwts
                 .builder()
                 .claims(extraClaims)
-                .subject(userDetails.getUsername())
+                .subject(userDetails.getUsername()) // ?
                 .issuedAt(new Date(System.currentTimeMillis()))
-                .expiration(new Date(System.currentTimeMillis() + 1000 * 60 * 24))
+                .expiration(new Date(System.currentTimeMillis() + 1000 * 15))
                 .signWith(getSignInKey())
                 .compact();
     }

@@ -1,6 +1,8 @@
-package com.slezkipotekli.cms.auth;
+package com.slezkipotekli.cms.service;
 
-import com.slezkipotekli.cms.config.JWTService;
+import com.slezkipotekli.cms.dto.auth.AuthenticationRequest;
+import com.slezkipotekli.cms.dto.auth.AuthenticationResponse;
+import com.slezkipotekli.cms.dto.auth.RegisterRequest;
 import com.slezkipotekli.cms.entity.Role;
 import com.slezkipotekli.cms.entity.User;
 import com.slezkipotekli.cms.repository.UserRepository;
