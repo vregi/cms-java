@@ -18,7 +18,7 @@ import java.util.List;
 public class Department {
     @Id
     @GeneratedValue
-    private Long id;
+    private Integer id;
 
     @Column(unique = true)
     private String name;

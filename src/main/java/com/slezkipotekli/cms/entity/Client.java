@@ -17,7 +17,7 @@ import java.util.List;
 public class Client {
     @Id
     @GeneratedValue
-    private Long id;
+    private Integer id;
 
     private String name;
 

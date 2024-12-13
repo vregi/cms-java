@@ -20,7 +20,7 @@ import java.util.List;
 public class Employee {
     @Id
     @GeneratedValue
-    private Long id;
+    private int id;
 
     private String firstname;
     private String lastname;
@@ -35,6 +35,8 @@ public class Employee {
     private Date hireDate;
 
     private BigDecimal salary;
+
+    private String position;
 
     @ManyToOne
     @JoinColumn(name = "department_id")

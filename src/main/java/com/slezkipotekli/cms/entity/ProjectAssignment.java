@@ -1,12 +1,14 @@
 package com.slezkipotekli.cms.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 /**
  * @author vregi, 12/13/2024
  */
 @Entity
 @Table(name = "project_assignments")
+@Data
 public class ProjectAssignment {
     @Id
     @GeneratedValue
